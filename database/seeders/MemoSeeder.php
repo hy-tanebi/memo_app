@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB; //DBファサード
 
 class MemoSeeder extends Seeder
 {
@@ -18,8 +18,8 @@ class MemoSeeder extends Seeder
         DB::table('memos')->insert([
             'title' => 'PHP',
             'body' => 'PHPは、Hypertext Preprocessorの略です。',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
+            'created_at' => date('Y-m-d H:i:s'), //DBファサードの時は記述が必要。エロクワントは自動でやってくれる
+            'updated_at' => date('Y-m-d H:i:s'), //DBファサードの時は記述が必要。エロクワントは自動でやってくれる
         ]);
 
         # paramに配列を代入
@@ -27,14 +27,14 @@ class MemoSeeder extends Seeder
             [
                 'title' => 'HTML',
                 'body' => 'HTMLは、Hypertext Markup Languageの略です。',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
+                'created_at' => date('Y-m-d H:i:s'), //DBファサードの時は記述が必要。エロクワントは自動でやってくれる
+                'updated_at' => date('Y-m-d H:i:s'), //DBファサードの時は記述が必要。エロクワントは自動でやってくれる
             ],
             [
                 'title' => 'CSS',
                 'body' => "CSSは、\nCascading Style Sheets\nの略です。",
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s'),
+                'created_at' => date('Y-m-d H:i:s'), //DBファサードの時は記述が必要。エロクワントは自動でやってくれる
+                'updated_at' => date('Y-m-d H:i:s'), //DBファサードの時は記述が必要。エロクワントは自動でやってくれる
             ]
         ];
         # DB::table->insertでレコードの登録

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Memo;
+use App\Models\Memo; //追加 これがあると以降はMemoの記載だけで済む
 use Illuminate\Http\Request;
 
 class MemoController extends Controller
