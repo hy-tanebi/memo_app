@@ -25,7 +25,7 @@ class MemoRequest extends FormRequest
     {
         return [
             //
-            'title' => 'required|string|max:4',
+            'title' => 'required|string|max:50',
             'body' => 'required|string|max:2000',
         ];
     }
